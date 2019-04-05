@@ -1,10 +1,111 @@
-<p>
-  Hello {{ownerName}}!!!
-  ___
-</p>
-
-<ul>
-  <li *ngFor="let lang of languages">
-    {{lang}}
-  </li>
-</ul>
+<div id="container">
+    <font size="5">
+        <table bgcolor="white" align="center" id="sT_MSy">
+            <thead>
+                <h1>
+                    {{ownerName}}
+                </h1>
+                <hr>
+                <hr color="#333;" width="auto" size="7px">
+                <p>
+                    <th colspan="2">
+                         
+                          {{Address}}
+                          <label for="PhoneNumber">Phone Number:</label>
+                            <a id="PhoneNumber" href="tel:+380673339482">{{phoneNumber}}</a>
+                            ●
+                            <br>
+                            <label for="E_Mail">e-mail:</label>
+                            <a id="E_Mail" href="mailto:horaciy@gmail.com">{{Email}}</a>
+                        
+                    </th>
+                </p>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Goal</strong></td>
+                    <td>{{Goal}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Personal data</strong></td>
+                    <td>
+                        <ul>
+                            <li>Birth date: {{Birth}}.</li>
+                            <li>{{Wedlock}}</li>
+                            <li>{{Children}}</li>
+                            <li>{{Trip}}</li>
+                            <li>{{Habits}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Work experience</strong></td>
+                    <td>
+                        <ul>
+                            <li>
+                                General experience:
+                                <ul>
+                                    <li>{{Experience[0]}}</li>
+                                    <li>{{Experience[1]}}</li>
+                                    <li>{{Experience[2]}}</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Experience:
+                                <ul>
+                                    <li>{{Experience[3]}}</li>
+                                    <li>{{Experience[4]}}</li>
+                                    <li>{{Experience[5]}}</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Education</strong></td>
+                    <td>
+                        <ul>
+                            <li>{{Education[0]}}</li>
+                            <li>{{Education[1]}}</li>
+                            <li>{{Education[2]}}</li>
+                            <li>{{Education[3]}}</li>
+                            <li>{{Education[4]}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Additional information</strong></td>
+                    <td>
+                        <ul>
+                            <li>{{Additional[0]}}</li>
+                            <li>{{Additional[1]}}</li>
+                            <li>{{Additional[2]}}</li>
+                            <li>{{Additional[3]}}</li>
+                            <li>{{Additional[4]}}</li>
+                            <li>{{Additional[5]}}</li>
+                            <li>{{Additional[6]}}</li>
+                            <li>{{Additional[7]}}</li>
+                            <li>{{Additional[8]}}</li>
+                            <li>{{Additional[9]}}</li>
+                            <li>{{Additional[10]}}</li>
+                            <li>: {{Additional[11]}}</li>
+                            <li>{{Additional[12]}}</li>
+                            <li>{{Additional[13]}}</li>
+                            <li>{{Additional[14]}}</li>
+                            <li>{{Additional[15]}}</li>
+                            <li>{{Additional[16]}}</li>
+                            <li>•	IDE: {{Additional[17]}}</li>
+                            <li>
+                                Foreign languages:
+                                <ul>
+                                    <li>{{Additional[18]}}</li>
+                                    <li>{{Additional[19]}}</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </font>
+</div>
